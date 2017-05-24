@@ -10,7 +10,7 @@ npm run prod //生产环境命令
 
 在这里说一下HtmlWebpackPlugin 插件的使用
 
-###参考资料
+### 参考资料
 
 [官方文档](https://webpack.js.org/guides/get-started/)
 
