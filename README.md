@@ -1,16 +1,46 @@
-## webpack 简单工作流配置
+# webpack 简单工作流配置
 
-### 使用说明
-开发环境和生产环境使用了同一个配置文件 你完全可以在复制一份出来使其分开
+## 功能说明
+
+1.安装依赖并运行demo
+
+```bash
+npm install
+npm run dev
+```
+
+访问<http://localhost:8080/> 你就可以看到页面了
+
+这里主要是webpack-dev-server 插件在起作用，他们在本地运行一个服务器，默认端口8080 你可以运行以下命令变更端口
 
 ```
-npm run dev //开发环境命令
-npm run prod //生产环境命令
+webpack-dev-server --hot --inline --port=端口号
 ```
 
-在这里说一下HtmlWebpackPlugin 插件的使用
+具体关于webpack-dev-server的资料请[移步](https://github.com/e-cloud/webpack-docs/wiki/webpack-dev-server.cn)
 
-### 参考资料
+2.Demo能干什么？
+
+开发环境下
+
+> - 自动更新编译代码
+> - ~~自动刷新页面(待加入)~~
+> - sass语法
+> - js、css自动载入
+
+打包
+
+> - 编译压缩丑化js文件(webpack -p)
+> - 编译sass文件、厂商前缀、压缩css文件
+> - 编译html文件载入css、js
+
+打包命令
+
+```
+npm run prod
+```
+
+## 参考资料
 
 [官方文档](https://webpack.js.org/guides/get-started/)
 
@@ -18,10 +48,8 @@ npm run prod //生产环境命令
 
 [webpack 优秀中文文章](https://github.com/webpack-china/awesome-webpack-cn)
 
-[http://coolnuanfeng.github.io/webpack](http://coolnuanfeng.github.io/webpack)
+[webpack-docs](https://github.com/e-cloud/webpack-docs/wiki/webpack-dev-server.cn)
 
-[http://www.cnblogs.com/haogj/p/5160821.html](http://www.cnblogs.com/haogj/p/5160821.html)
+<http://coolnuanfeng.github.io/webpack>
 
-
-
-
+<http://www.cnblogs.com/haogj/p/5160821.html>

@@ -39,13 +39,13 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin({
-            filename: "styles.css",
+            filename: "../css/styles.css",
         }),
-      
+
         new HtmlWebpackPlugin({//热更新html文件
             title: 'Animation',//输入title变量
             hash: true ,//载入文件是hash
-            filename: 'animation.html',//输出名称
+            filename: '../animation.html',//输出名称
             template:'./src/pages/animation.html',/*模板地址*/
         })
         // 复制多个实现载入多个模板文件
@@ -70,4 +70,4 @@ module.exports = {
 // showErrors: true | false, 如果为 true, 这是默认值，错误信息会写入到 HTML 页面中
 // chunks: 允许只添加某些块 (比如，仅仅 unit test 块)
 // chunksSortMode: 允许控制块在添加到页面之前的排序方式，支持的值：'none' | 'default' | {function}-default:'auto'
-// excludeChunks: 允许跳过某些块，(比如，跳过单元测试的块) 
+// excludeChunks: 允许跳过某些块，(比如，跳过单元测试的块)
