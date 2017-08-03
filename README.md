@@ -19,7 +19,7 @@ webpack-dev-server --hot --inline --host 0.0.0.0 --port=端口号
 
 2.如何在其他终端上访问
 ```
-webpack-dev-server --public --host 192.168.1.106 --port 8080//把host地址改成本机的ip地址就可以了
+webpack-dev-server --public --host 192.168.xxx.xxx --port 8080//把host地址改成本机的ip地址就可以了
 ```
 
 具体关于webpack-dev-server的资料请[移步](https://github.com/e-cloud/webpack-docs/wiki/webpack-dev-server.cn)
